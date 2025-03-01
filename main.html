@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>tempat latihan</title>
-        <link rel = "stylesheet" href="style.css" />
-        <style>
-            #container{
-                background-color: red;
-            }
-            h1{
-                font-size: 50px;
-                color: black;
-            }
-            @media screen and (min-width: 600px) and (max-width: 900px){
-                #container{
-                    background: green;
-                }
-                h1{
-                    font-size: 75px;
-                    color: yellow
-                }
-            }
-        </style>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tempat latihan</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+            height: 20vh;
+            background-color: lightblue;
+            align-items: center;
+            padding: 10px;
+        }
 
-    <body>
-        <div id = "container">
-            <h1>Selamat malam teman teman</h1>
-        </div>
-    </body>
+        .subscribe-button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 40px; /* Adjust background size */
+            font-size: 16px;
+            cursor:pointer;
+            border-radius: 10px; /* Optional: rounded corners */
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); /* Optional: shadow effect */
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
 
+        .subscribe-button:hover {
+            background-color: darkred; /* Change color on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <button class="subscribe-button">SUBSCRIBE</button>
+    </div>
+</body>
 </html>
