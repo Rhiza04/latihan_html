@@ -6,25 +6,29 @@
         <title>tempat latihan</title>
         <link rel = "stylesheet" href="style.css" />
         <style>
-            .block-element{
-                display: inline;
-                background-color: lightblue;
-                padding: 25px;
-                margin: 25px;
+            #container{
+                background-color: red;
+            }
+            h1{
+                font-size: 50px;
+                color: black;
+            }
+            @media screen and (min-width: 600px) and (max-width: 900px){
+                #container{
+                    background: green;
+                }
+                h1{
+                    font-size: 75px;
+                    color: yellow
+                }
             }
         </style>
     </head>
 
     <body>
-
-        <h1>INI ADALAH H1</h1>
-        <h2>INI ADALAH H2</h2>
-
-        <span class="block-element">Inline Element1</span>
-        <span class="block-element">Inline Element2</span>
-        <span class="block-element">Inline Element3</span>
-
-        
+        <div id = "container">
+            <h1>Selamat malam teman teman</h1>
+        </div>
     </body>
 
 </html>
