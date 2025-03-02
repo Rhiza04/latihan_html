@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="style.css" />
     <style>
         .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 10px;
+            display: flex; /* Change from grid to flex */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
             height: 20vh;
-            background-color: lightblue;
-            align-items: center;
+            background-color: rgba(145, 202, 219, 1); /* Fix invalid RGBA alpha value */
             padding: 10px;
-        }
+        }        
 
         .subscribe-button {
             background-color: red;
@@ -26,17 +25,18 @@
             border-radius: 10px; /* Optional: rounded corners */
             box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3); /* Optional: shadow effect */
             text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+            align-items: center;
         }
 
         .subscribe-button:hover {
-            background-color: darkred; /* Change color on hover */
+            background-color: darkred;
         }
     </style>
 </head>
 
 <body>
     <div class="grid-container">
-        <button class="subscribe-button">SUBSCRIBE</button>
+        <button class="subscribe-button">SUBSCRIBE </button>
     </div>
 </body>
 </html>
