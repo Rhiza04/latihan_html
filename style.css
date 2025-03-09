@@ -50,17 +50,20 @@ body::after {
     white-space: pre-line;
 }
 
+.text-jubel{
+    pointer-events: auto;
+}
+
 .main-header {
-    width: 100%;
-    height: 100px; /* Standard header height */
-    background: rgba(145,202,219,0.5);
-    color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left; /* Align header content to the left */
     padding: 0px 20px;
-    gap: 15px;
+    gap: 10px; /* Space between elements */
+    background: rgba(145,202,219,0.5);
 }
+
+
 
 .container {
     display: flex;
@@ -73,7 +76,7 @@ body::after {
 .content {
     background: none;
     padding: 20px;
-    flex: 1; /* Makes content fill remaining space */
+    flex: 1;
 }
 
 .clickable-div:hover {
@@ -81,15 +84,30 @@ body::after {
 }
 
 .clickable-div {
-    float: left;
-    width: 5px;
-    height: 5px;
-    cursor: pointer; /* Shows hand cursor on hover */
-    background-color: white;
-    color: white;
-    padding: 5px;
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: fit-content; /* Shrink width to fit content */
+    cursor: pointer;
+    padding: 5px 10px; /* Adjust padding */
     border-radius: 8px;
-    display: inline-block;
     transition: 0.3s;
+    box-sizing: border-box;
+    background: none; /* Remove unwanted background */
+}
+
+.clickable-div img {
+    pointer-events: auto; /* Ensures the image itself remains clickable */
+}
+
+.clickable-link {
+    text-decoration: none; /* Remove default underline */
+}
+
+.clickable-div {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+    padding: 5px 10px;
 }
