@@ -48,9 +48,6 @@ body::after {
     font-weight: 650;
     margin-left: 20px;
     white-space: pre-line;
-}
-
-.text-jubel{
     pointer-events: auto;
 }
 
@@ -75,7 +72,7 @@ body::after {
 
 .content {
     background: none;
-    padding: 20px;
+    padding: 0px;
     flex: 1;
 }
 
@@ -89,11 +86,16 @@ body::after {
     justify-content: left;
     width: fit-content; /* Shrink width to fit content */
     cursor: pointer;
-    padding: 5px 10px; /* Adjust padding */
+    padding: 5px 5px; /* Adjust padding */
     border-radius: 8px;
     transition: 0.3s;
     box-sizing: border-box;
     background: none; /* Remove unwanted background */
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+    padding: 5px 10px;
 }
 
 .clickable-div img {
@@ -102,12 +104,4 @@ body::after {
 
 .clickable-link {
     text-decoration: none; /* Remove default underline */
-}
-
-.clickable-div {
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    cursor: pointer;
-    padding: 5px 10px;
 }
