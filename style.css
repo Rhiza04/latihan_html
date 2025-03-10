@@ -54,7 +54,7 @@ body::after {
 .main-header {
     display: flex;
     align-items: center;
-    justify-content: left; /* Align header content to the left */
+    justify-content: space-between; /* Align header content to the left */
     padding: 0px 20px;
     gap: 10px; /* Space between elements */
     background: rgba(145,202,219,0.5);
@@ -104,4 +104,35 @@ body::after {
 
 .clickable-link {
     text-decoration: none; /* Remove default underline */
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    letter-spacing: 1.8px;
+}
+
+.navbar a:hover{
+    background-color: hsl(0, 0%, 10%);
+}
+
+.navbar li{
+    float: right;
+}
+
+.navigation-bar{
+    display: flex;
 }
