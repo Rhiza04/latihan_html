@@ -7,7 +7,7 @@ body {
     position: relative;
     margin: 0;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
 }
 
 body::before {
@@ -34,7 +34,7 @@ body::after {
 }
 
 .main-logo-jubel{
-    margin: 200px;
+    margin: 100px;
     padding: 0px;
     width: 100px;
     height: 100px;
@@ -74,7 +74,7 @@ body::after {
 .container {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    min-height: 100vh; /* Full height of viewport */
+    min-height: 100svh; /* Full height of viewport */
     width: 100%;
     gap: 0;
 }
@@ -161,4 +161,9 @@ body::after {
     justify-items: center;
     border-style: dashed;
     border-color: whitesmoke;
+}
+
+.blank-space{
+    height: 100vh;
+    background-color: white;
 }
