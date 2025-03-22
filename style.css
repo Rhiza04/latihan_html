@@ -52,6 +52,21 @@ body::-webkit-scrollbar {
     transition: 0.3s ease-in-out;
 }
 
+.main-logo-jubel:hover ~ .jubel-description{
+    display: block;
+    transition: display 0.3s ease-in-out;
+}
+
+.main-logo-jubel:hover ~ .greetings-title{
+    display: none;
+    transition: display 0.3s ease-in-out;
+}
+
+.main-logo-jubel:hover ~ .main-title{
+    display: none;
+    transition: display 0.3s ease-in-out;
+}
+
 .logo-jubel{
     margin-top: 0px;
     margin-left: 0px;
@@ -237,6 +252,8 @@ body::-webkit-scrollbar {
 }
 
 .jubel-description{
+    width: fit-content;
+    height: fit-content;
     color: white;
     padding: 0px;
     margin: 0px;
@@ -246,5 +263,5 @@ body::-webkit-scrollbar {
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
     white-space: pre-line;
     text-align: justify;
-    display: inline;
+    display: none;
 }
