@@ -25,11 +25,15 @@ body::after {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.6); 
+    background: rgba(255, 255, 255, 0.8); 
     z-index: -1; 
 }
 
 body::-webkit-scrollbar {
+    display: none;
+}
+
+.slider::-webkit-scrollbar {
     display: none;
 }
 
@@ -181,8 +185,8 @@ body::-webkit-scrollbar {
     padding-right: 10px;
     align-content: center;
     justify-items: center;
-    border-style: dashed;
-    border-color: whitesmoke;
+    border-style: none;
+    border-color: none;
 }
 
 .hero-title{
@@ -212,6 +216,7 @@ body::-webkit-scrollbar {
 .blank-space{
     height: 100vh;
     background-color: white;
+    padding: 4rem;
 }
 
 .main-logo-jubel{
@@ -276,13 +281,58 @@ body::-webkit-scrollbar {
     transition: opacity 1s ease-in-out, transform 1s ease-in-out, display 1s ease-in-out;
 }
 
-.main-logo:hover .greetings-title,
-.main-logo:hover .main-title {
+.main-logo-jubel:hover .greetings-title,
+.main-logo-jubel:hover .main-title {
     transform: translateY(-10px); /* Move up */
 }
 
-.main-logo:hover .jubel-description {
+.main-logo-jubel:hover .jubel-description {
     opacity: 1;
     transform: translateY(0); /* Move to normal position */
     display: inline;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 33rem;
+    margin: 0 0;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 25px;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease-in-out 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
 }
