@@ -215,8 +215,9 @@ body::-webkit-scrollbar {
 
 .blank-space{
     height: 100vh;
-    background-color: white;
+    background-color: rgb(235, 235, 235);
     padding: 4rem;
+    display: grid;
 }
 
 .main-logo-jubel{
@@ -335,4 +336,17 @@ body::-webkit-scrollbar {
 
 .slider-nav a:hover{
     opacity: 1;
+}
+
+.ipa-7{
+    flex-direction: column;
+}
+
+.ipa-7-title{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 1000;
+    font-size: 58px;
+    display: inline;
 }
